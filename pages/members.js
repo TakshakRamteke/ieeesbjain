@@ -1,17 +1,17 @@
 import Head from 'next/head'
 import Layout from '../components/layout';
 
-const Home = () =>{
+const Members = () =>{
   return(
     <Layout>
       <Head>
         <title>
-          Home Page
+          Members Page
         </title>
       </Head>
-      <h1>Home Page</h1>
+      <h1>Members Page</h1>
     </Layout>
   );
 }
 
-export default Home
+export default Members

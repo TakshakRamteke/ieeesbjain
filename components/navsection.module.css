@@ -11,4 +11,7 @@
 .contentArea{
     width: 80vw;
     height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
