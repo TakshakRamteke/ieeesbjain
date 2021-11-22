@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     height: 19vh;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     padding: .3em .3em .3em .3em;
 }
 .container h2{
