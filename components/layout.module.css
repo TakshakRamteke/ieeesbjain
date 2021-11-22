@@ -1,0 +1,22 @@
+.topBar{
+    height: 3em;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.logo{
+    margin-right: auto;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    border-right: 1px solid black;
+}
+.join{
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    border-left: 1px solid black;
+}
+.contribute{
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    border-left: 1px solid black;
+}

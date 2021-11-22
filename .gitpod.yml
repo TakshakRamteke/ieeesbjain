@@ -1,0 +1,12 @@
+tasks:
+  - init : npm ci
+  - command : npm run dev
+
+ports :
+  - port : 3000
+    onOpen : open-browser
+
+vscode:
+  extensions:
+    - pkief.material-icon-theme
+
