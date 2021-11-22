@@ -1,6 +1,6 @@
 tasks:
   - init : npm ci
-  - command : npm run dev
+    command : npm run dev
 
 ports :
   - port : 3000
