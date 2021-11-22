@@ -19,11 +19,11 @@ export default function Layout({children}){
                     Contribute
                 </h2>
             </div>
-            <main>
+            <div>
                 <NavSection>
                     {children}
                 </NavSection>
-            </main>
+            </div>
         </div>
     )
 
