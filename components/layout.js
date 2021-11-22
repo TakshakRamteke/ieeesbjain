@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import styles from './layout.module.css'
+import NavSection from './navsection'
 
 export default function Layout({children}){
 
@@ -6,7 +8,9 @@ export default function Layout({children}){
         <div>
             <div className={styles.topBar}>
                 <h2 className={styles.logo}>
-                    LOGO
+                    <Link href="/">
+                        LOGO
+                    </Link>
                 </h2>
                 <h2 className={styles.join}>
                     Join
@@ -16,7 +20,9 @@ export default function Layout({children}){
                 </h2>
             </div>
             <main>
-                {children}
+                <NavSection>
+                    {children}
+                </NavSection>
             </main>
         </div>
     )

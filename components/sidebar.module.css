@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    align-items: center;
+    height: 19vh;
+    border-bottom: 1px solid black;
+    padding: .3em .3em .3em .3em;
+}
+.container h2{
+    margin: 0px;
+}
+.container:last-child{
+    border-bottom: 0px;
+}

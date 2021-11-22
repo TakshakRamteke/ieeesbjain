@@ -1,0 +1,17 @@
+.container{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+}
+.sideBar{
+    width: 20vw;
+    height: inherit;
+    border-left: 1px solid black;
+}
+.contentArea{
+    width: 80vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
