@@ -1,16 +1,24 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Layout from '../components/layout';
+import styles from '../styles/Home.module.css'
 
 const Home = () =>{
   return(
-    <Layout>
+    <div>
       <Head>
-        <title>
-          Home Page
-        </title>
+          <title>
+            Home Page
+          </title>
       </Head>
-      <h1>Home Page</h1>
-    </Layout>
+      <Layout>
+        <div className={styles.container}>
+          <div className={styles.heading}>
+            <h1>IEEE S.B.Jain Student Branch</h1>
+            <span className={styles.statement}> Tech for the benefit of humanity</span>
+          </div>
+        </div>
+      </Layout>
+    </div>
   );
 }
 
