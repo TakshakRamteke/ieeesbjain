@@ -1,4 +1,5 @@
 import styles from './navsection.module.css'
+import Sidebar from './sidebar'
 
 export default function NavSection({children}){
     return (
@@ -7,7 +8,7 @@ export default function NavSection({children}){
                 {children}
             </div>
             <div className={styles.sideBar}>
-
+                <Sidebar/>
             </div>
         </div>
     )
