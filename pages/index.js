@@ -1,15 +1,15 @@
 import Head from 'next/head'
-
+import Layout from '../components/layout';
 const Home = () =>{
   return(
-    <div>
+    <Layout>
       <Head>
         <title>
           Home Page
         </title>
       </Head>
         <h1>This is Home Page</h1>
-    </div>
+    </Layout>
   );
 }
 
