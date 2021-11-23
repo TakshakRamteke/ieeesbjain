@@ -9,6 +9,7 @@ const Home = () =>{
           <title>
             Home Page
           </title>
+          <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout>
         <div className={styles.container}>
