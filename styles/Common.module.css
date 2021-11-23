@@ -1,0 +1,29 @@
+/* This CSS module file is for common css that is to be used accross the site*/
+
+.container {
+    width: 80vw;
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.container h1{
+    padding: 0;
+    margin: 0;
+}
+.verticalContainer {
+    width: 80vw;
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.verticalContainer:nth-child(){
+    padding: 0;
+    margin: 0;
+}
