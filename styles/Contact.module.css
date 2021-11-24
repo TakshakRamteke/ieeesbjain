@@ -1,0 +1,42 @@
+.H2{
+    padding: .2em .2em .2em .2em;
+    margin: .5em .5em .5em .5em;
+    font-size: 1.9em;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: .2em .2em 0 black;
+}
+.H3{
+    padding: .2em .2em .2em .2em;
+    margin: .5em .5em .5em .5em;
+    font-size: 1.5em;
+}
+.socials{
+    background-color: black;
+    color: white;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em .5em .5em .5em;
+    margin: 1em 1em 1em 2em;
+}
+.socials:hover{
+    transform: scale(1.1);
+}
+.icons{
+    font-size: 32px;
+    color: white;
+    margin: .1em .1em .1em .1em;
+}
+.icons:hover{
+    transform: rotate(10deg);
+}
+
+.contactForm{
+    width: 80%;
+    height: max-content;
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: .5em .5em 0 black;
+}
