@@ -4,7 +4,7 @@ import styles from './layout.module.css';
 import NavSection from './navsection';
 
 export default function Layout({children}){
-
+    
     return(
         <div>
             <div className={styles.topBar}>

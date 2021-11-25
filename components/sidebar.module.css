@@ -1,7 +1,7 @@
 .container{
     display: flex;
     align-items: center;
-    height: 19vh;
+    height: 18.5vh;
     border-bottom: 2px solid black;
     padding: .3em .3em .3em .3em;
 }
@@ -10,4 +10,19 @@
 }
 .container:last-child{
     border-bottom: 0px;
+}
+.linkText{
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: 0.5em;
+}
+.linkText:hover{
+    color: rgb(64, 64, 235);;
+}
+
+.linkTextActive{
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: 0.5em;
+    color: rgb(64, 64, 235);;
 }
