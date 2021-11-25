@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import styles from './navsection.module.css'
-import Sidebar from './sidebar'
+import styles from './navsection.module.css';
+import Sidebar from './sidebar';
 
 export default function NavSection({children}){
     return (
