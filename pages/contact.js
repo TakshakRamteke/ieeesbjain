@@ -23,11 +23,20 @@ const Contact = () =>{
         </div>
         <div className={styles.contactForm}>
           <h3 className={styles.H3}>Drop A Hello !</h3>
-          <form>
-            <h3 className={styles.H3}>First name:</h3>
-            <input type="text" name="fname" /><br />
-            <h3 className={styles.H3}>Email:</h3>
-            <input type="email" name="lname" />
+          <form className={styles.form}>
+            <div>
+              <h3 >Your Name:</h3>
+              <input type="text" name="fname" />
+            </div>
+            <div>
+              <h3 >Your E-mail:</h3>
+              <input type="email" name="lname" />
+              </div>
+            <div>
+              <h3 >Your Message:</h3>
+              <input type="email" name="lname" />
+            </div>
+            <input type="submit" value="Send" className={styles.submit}/>
           </form>
         </div>
       </div>

@@ -10,6 +10,7 @@
     padding: .2em .2em .2em .2em;
     margin: .5em .5em .5em .5em;
     font-size: 1.5em;
+    align-self: flex-start;
 }
 .socials{
     background-color: black;
@@ -36,4 +37,38 @@
     border: 2px solid black;
     background-color: white;
     box-shadow: .5em .5em 0 black;
+}
+
+.form{
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+}
+.form div{
+    width: inherit;
+    font-size: 1.2em;
+    display: flex;
+    margin: .5em .5em .5em .5em;
+}
+.form div input{
+    width: 40%;
+    font-size: 1em;
+    margin-left: 1em;
+    border: 2px solid black;
+}
+.form h3{
+    padding: 0;
+    margin: 0;
+}
+.submit{
+    width: 13%;
+    height: 3em;
+    padding: 0 0 0 0;
+    margin: 0 .7em 0 auto;
+    font-size: 1em;
+    font-weight: bold;
+    border: 0px none;
+    border-radius: 2em;
+    background-color: black;
+    color: white;
 }
