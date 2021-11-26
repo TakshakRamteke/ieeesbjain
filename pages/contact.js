@@ -1,8 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Layout from '../components/layout';
 import commonStyle from '../styles/Common.module.css';
 import styles from '../styles/Contact.module.css';
-import { LinkedinOutlined, InstagramOutlined, FacebookOutlined, TwitterOutlined} from '@ant-design/icons'
+import { LinkedinOutlined, InstagramOutlined, FacebookOutlined, TwitterOutlined} from '@ant-design/icons';
 
 const Contact = () =>{
   return(

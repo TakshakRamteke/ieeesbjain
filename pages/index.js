@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
-import styles from '../styles/Home.module.css'
-import common from '../styles/Common.module.css'
-
+import styles from '../styles/Home.module.css';
+import common from '../styles/Common.module.css';
 const Home = () =>{
   return(
     <div>
