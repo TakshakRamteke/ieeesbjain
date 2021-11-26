@@ -4,10 +4,14 @@
     display: flex;
 }
 .sideBar{
+    z-index: 1;
     width: 20vw;
     height: inherit;
     border-left: 2px solid black;
     background-color: white;
+}
+.backgroundImage{
+    z-index: -1;
 }
 .contentArea{
     width: 80vw;

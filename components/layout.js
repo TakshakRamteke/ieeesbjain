@@ -20,11 +20,13 @@ export default function Layout({children}){
                 <h2 className={styles.join}>
                     Join
                 </h2>
-                <a href="https://github.com/TakshakRamteke/ieeesbjain">
-                    <h2 className={styles.contribute}>
-                        Contribute
-                    </h2>
-                </a>
+                <div className={styles.contribute}>
+                    <a href="https://github.com/TakshakRamteke/ieeesbjain" target="_blank" rel="noreferrer">
+                        <h2>
+                            Contribute
+                        </h2>
+                    </a>
+                </div>
             </div>
             <div>
                 <NavSection>

@@ -9,15 +9,18 @@
     background-color: white;
 }
 .logo{
+    z-index: 1;
     margin-right: auto;
     padding: 0.5em 0.5em 0.4em 0.5em;
     border-right: 2px solid black;
 }
 .join{
+    z-index: 1;
     padding: 0.4em 0.4em 0.4em 0.4em;
     border-left: 2px solid black;
 }
 .contribute{
+    z-index: 1;
     padding: 0.4em 0.4em 0.4em 0.4em;
     border-left: 2px solid black;
 }
