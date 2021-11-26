@@ -12,7 +12,7 @@ const Featured = () =>{
         </title>
       </Head>
       <div className={commonStyle.verticalContainer}>
-        <h3 className={styles.H3}>Some Things we're Proud of !</h3>
+        <h3 className={styles.H3}>Some Things we are Proud of !</h3>
         <div className={styles.featuredProjects}>
           <h3>Featured Projects</h3>
         </div>
