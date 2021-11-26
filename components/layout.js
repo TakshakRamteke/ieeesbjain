@@ -21,7 +21,7 @@ export default function Layout({children}){
                     Join
                 </h2>
                 <div className={styles.contribute}>
-                    <a href="https://github.com/TakshakRamteke/ieeesbjain" target="_blank">
+                    <a href="https://github.com/TakshakRamteke/ieeesbjain" target="_blank" rel="noreferrer">
                         <h2>
                             Contribute
                         </h2>
