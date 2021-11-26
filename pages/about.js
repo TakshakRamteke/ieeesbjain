@@ -1,7 +1,7 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Layout from '../components/layout';
-import common from '../styles/Common.module.css'
-import styles from '../styles/About.module.css'
+import common from '../styles/Common.module.css';
+import styles from '../styles/About.module.css';
 
 const About = () =>{
   return(
