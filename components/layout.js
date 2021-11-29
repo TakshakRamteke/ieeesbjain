@@ -1,5 +1,5 @@
-import DesktopLayout from "./desktop_layout";
-import MobileLayout from "./mobile_layout";
+import DesktopLayout from "./desktop_layout/desktop_layout";
+import MobileLayout from "./mobile_layout/mobile_layout";
 import { useState, useEffect, useCallback } from "react";
 
 /* Function TO get The current Window Height {Didn't Work properly}*/

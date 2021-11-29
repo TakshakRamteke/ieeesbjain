@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './mobile_layout.module.css';
 import {MenuOutlined} from '@ant-design/icons';
 import { useState } from 'react';
-import Drawer from './Drawer/drawer';
+import Drawer from '../Drawer/drawer';
 import { AnimatePresence } from 'framer-motion';
 
 export default function MobileLayout({children}){
@@ -14,12 +14,19 @@ export default function MobileLayout({children}){
 
     return(
         <>
+            <div className = {styles.backgroundImage}>
+                <Image
+                    src = "/mobilebackground.png"
+                    layout = "fill"
+                />
+            </div>
+
             <div className = {styles.topBar}>
                 <div className = {styles.logo}>
                     <Image
-                    src = "/logo.png"
-                    width = {70}
-                    height = {30}
+                        src = "/logo.png"
+                        width = {70}
+                        height = {30}
                     />
                 </div>
                 <MenuOutlined className={styles.menue} onClick = {() => (drawerOpen ? close() : open())}/>
@@ -31,7 +38,7 @@ export default function MobileLayout({children}){
                 </AnimatePresence>
 
             </div>
-
+            
             {children}
 
         </>

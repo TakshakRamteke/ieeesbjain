@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './desktop_layout.module.css';
-import NavSection from './navsection';
+import NavSection from '../navsection';
 
 export default function DesktopLayout({children}){
 
