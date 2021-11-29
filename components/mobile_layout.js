@@ -23,7 +23,10 @@ export default function MobileLayout(){
                     />
                 </div>
                 <MenuOutlined className={styles.menue} onClick = {() => (drawerOpen ? close() : open())}/>
-                <AnimatePresence>
+                <AnimatePresence
+                initial = {false}
+                exitBeforeEnter = {true}
+                >
                     {drawerOpen && <Drawer drawerOpen={drawerOpen} handelClose={close}/>}
                 </AnimatePresence>
 

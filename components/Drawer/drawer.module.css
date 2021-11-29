@@ -1,9 +1,11 @@
 .drawer{
-    width: 70%;
-    height: 40%;
+    width: 80%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     color: white;
+    border: 2px solid black;
+    box-shadow: .5em .5em 0 black;
 }
