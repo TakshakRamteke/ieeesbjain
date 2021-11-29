@@ -30,3 +30,14 @@
 .event:hover{
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 810px) {
+    .eventContainer{
+        height: 90%;
+        box-shadow: 0.5em 0.5em 0 black;
+    }
+    .event{
+        width: 95%;
+        height: 35%;
+    }
+}
