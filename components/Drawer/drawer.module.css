@@ -12,9 +12,19 @@
 .ul{
     list-style: none;
     padding: 0;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-.ul li{
+.li{
     font-size: 2em;
     font-weight: bolder;
-    margin: 1em 1em 1em 1em;
+    margin: 2em 2em 2em 2em;
+}
+.liActive{
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 2em 2em 2em 2em;
+    color: rgb(64, 64, 235);
 }
