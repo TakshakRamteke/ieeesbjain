@@ -65,7 +65,9 @@ export default function Layout({children}){
     return(
         <div>
             {isMobile ? (
-                <MobileLayout/>
+                <MobileLayout>
+                    {children}
+                </MobileLayout>
             ) : (
                 <DesktopLayout>
                     {children}

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Drawer from './Drawer/drawer';
 import { AnimatePresence } from 'framer-motion';
 
-export default function MobileLayout(){
+export default function MobileLayout({children}){
 
     const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -31,6 +31,9 @@ export default function MobileLayout(){
                 </AnimatePresence>
 
             </div>
+
+            {children}
+
         </>
     );
 }
