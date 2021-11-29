@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './mobile_layout.module.css';
 import {MenuOutlined} from '@ant-design/icons';
 import { useState } from 'react';
@@ -23,11 +24,13 @@ export default function MobileLayout({children}){
 
             <div className = {styles.topBar}>
                 <div className = {styles.logo}>
-                    <Image
-                        src = "/logo.png"
-                        width = {70}
-                        height = {30}
-                    />
+                    <Link href = "/">
+                        <Image
+                            src = "/logo.png"
+                            width = {70}
+                            height = {30}
+                        />
+                    </Link>
                 </div>
                 <MenuOutlined className={styles.menue} onClick = {() => (drawerOpen ? close() : open())}/>
                 <AnimatePresence
