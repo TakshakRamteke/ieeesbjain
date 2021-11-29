@@ -43,3 +43,13 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 810px) {
+    .container, .verticalContainer, .centerContainer{
+        width: 100%;
+        height: 93vh;
+    }
+    .verticalContainer{
+        overflow-y: scroll;
+    }
+}

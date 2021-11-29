@@ -39,3 +39,16 @@
     margin: 0;
     font-size: 1.3em;
 }
+
+@media screen and (max-width: 810px) {
+    .H3{
+        margin: 0;
+    }
+    .featuredProjects, .featuredStudent{
+        width: 95%;
+        margin: 0.5em 0.5em 0.5em 0.5em;
+    }
+    .featuredProjects h3, .featuredStudent h3{
+        font-size: 1em;
+    }
+}

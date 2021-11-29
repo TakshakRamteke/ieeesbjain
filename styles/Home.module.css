@@ -12,3 +12,10 @@
   color: grey;
   font-size: 0.8em;
 }
+@media screen and (max-width: 810px){
+  .heading{
+    width: 90%;
+    font-size: 1em;
+    margin-bottom: 4em;
+  }
+}

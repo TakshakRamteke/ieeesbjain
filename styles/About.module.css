@@ -43,3 +43,21 @@
     background-color: White;
     color: black;
 }
+
+@media screen and (max-width: 810px){
+    .container, .containerEven{
+        margin-top: 1em;
+        width: 90%;
+        height: max-content;
+        flex-direction: column;
+        flex-wrap: wrap ;
+        border: 0px none;
+        box-shadow: none;
+    }
+    .image, .imageEven{
+        display: none;
+    }
+    .quesContainer{
+        width: 90%;
+    }
+}
