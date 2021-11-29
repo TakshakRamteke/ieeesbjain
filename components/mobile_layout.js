@@ -1,5 +1,33 @@
+import Image from 'next/image';
+import styles from './mobile_layout.module.css';
+import {MenuOutlined} from '@ant-design/icons';
+import { useState } from 'react';
+import Drawer from './Drawer/drawer';
+import { AnimatePresence } from 'framer-motion';
+
 export default function MobileLayout(){
+
+    const [drawerOpen, setDrawerOpen] = useState(false);
+
+    const open = () => setDrawerOpen(true);
+    const close = () => setDrawerOpen(false);
+
     return(
-        <h1>This is Mobile Layout</h1>
+        <>
+            <div className = {styles.topBar}>
+                <div className = {styles.logo}>
+                    <Image
+                    src = "/logo.png"
+                    width = {70}
+                    height = {30}
+                    />
+                </div>
+                <MenuOutlined className={styles.menue} onClick = {() => (drawerOpen ? close() : open())}/>
+                <AnimatePresence>
+                    {drawerOpen && <Drawer drawerOpen={drawerOpen} handelClose={close}/>}
+                </AnimatePresence>
+
+            </div>
+        </>
     );
 }

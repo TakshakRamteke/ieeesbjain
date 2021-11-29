@@ -1,0 +1,9 @@
+.drawer{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: white;
+}

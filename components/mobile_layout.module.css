@@ -1,0 +1,16 @@
+.topBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 7vh;
+    background-color: white;
+}
+.logo{
+    margin-right: auto;
+    padding: 1em 0.7em 0.7em 0.7em;
+}
+.menue{
+    font-size: 1.6em;
+    padding: 0.7em 0.7em 0.7em 0.7em;
+}
