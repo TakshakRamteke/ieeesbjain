@@ -2,7 +2,7 @@
 
 ### What is it ❓ :
 
-ieeesbjain is the project started to create a website for IEEE S.B.Jain Student Branch, simple 🙂
+ieeesbjain is the project started with the goal of creating a website for IEEE S.B.Jain Student Branch, simple 🙂
 
 ### Setup ⚙️ : 
 
