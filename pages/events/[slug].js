@@ -1,4 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
+import Layout from '../../components/layout';
+import commonStyle from '../../styles/Common.module.css';
+import styles from '../../styles/Events.module.css';
 
 export async function getStaticPaths() {
     const query = `{
@@ -64,17 +68,26 @@ export async function getStaticProps({ params }) {
 
 export default function Event({ event }) {
     return(
-      <div>
-        <h2>{event.name}</h2>
-        <Image
-          src={event.poster.url}
-          width={event.poster.width}
-          height={event.poster.height}
-          layout="intrinsic"
-          alt={event.poster.description}
-        />
-        <br/>
-        <h3>{event.poster.description}</h3>
-      </div>
+      <Layout>
+        <div className={commonStyle.centerContainer}>
+          <div className={styles.eventContainer}>
+            <div className={styles.individualEvent}>
+              <h1>{event.name}</h1>
+              <Image
+                src={event.poster.url}
+                width={event.poster.width}
+                height={event.poster.height}
+                layout="intrinsic"
+                alt={event.poster.description}
+              />
+              <br/>
+              <p>{event.poster.description}</p>
+              <Link href="/events"> 
+                <a className={styles.back}>  back to events</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Layout>
     );
 }
