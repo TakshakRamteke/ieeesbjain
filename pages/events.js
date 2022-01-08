@@ -12,8 +12,6 @@ export async function getStaticProps(){
         name
         poster{
           url
-          width
-          height
         }
       }
     }
@@ -31,12 +29,11 @@ export async function getStaticProps(){
     }
     ).then((res) => res.json());
 
-    console.log(response)
-
   return {
     props : {
       events : response.data.eventCollection.items,
     },
+    revalidate: 5,
   }
 }
 
@@ -52,13 +49,14 @@ const Events = ({events}) =>{
       <div className={commonStyle.centerContainer}>
         <div className={styles.eventContainer}>
             {events.map((event) => (
-              <>
+              <div className={styles.event}>
+                <h3>{event.name}</h3>
               <Image
               src = {event.poster.url}
-              height = {event.poster.height}
-              width = {event.poster.width}
+              height = {194.5}
+              width = {314}
               />
-              </>
+              </div>
             ))}
         </div>
       </div>
