@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import Layout from '../components/layout';
 import commonStyle from '../styles/Common.module.css';
 import styles from '../styles/Events.module.css';
@@ -10,6 +11,7 @@ export async function getStaticProps(){
     eventCollection{
       items{
         name
+        slug
         poster{
           url
         }
@@ -49,14 +51,18 @@ const Events = ({events}) =>{
       <div className={commonStyle.centerContainer}>
         <div className={styles.eventContainer}>
             {events.map((event) => (
-              <div className={styles.event}>
-                <h3>{event.name}</h3>
-              <Image
-              src = {event.poster.url}
-              height = {194.5}
-              width = {314}
-              />
-              </div>
+              <Link href={`/events/${event.slug}`}>
+                <a>
+                  <div className={styles.event}>
+                    <h3>{event.name}</h3>
+                    <Image
+                    src = {event.poster.url}
+                    height = {194.5}
+                    width = {314}
+                    />
+                  </div>
+                </a>
+              </Link>
             ))}
         </div>
       </div>
