@@ -29,15 +29,50 @@
     padding: 0;
     padding-bottom: 5px;
 }
-
+.individualEvent{
+    width: max-content;
+    height: max-content;
+    font-size: 1.2em;
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.individualEvent h1{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+.individualEvent p{
+    font-size: 20px;
+}
+.back{
+    color: grey;
+    font-size: 15px;
+}
 
 @media screen and (max-width: 810px) {
     .eventContainer{
         height: 90%;
         box-shadow: 0.5em 0.5em 0 black;
     }
-    .event{
+    /*.event{
         width: 95%;
         height: 35%;
+    }
+    .individualEvent{
+        width: 95%;
+        height: 35%;
+    }*/
+    .individualEvent h1{
+        font-size: 1.5em;
+    }
+    .individualEvent p{
+        font-size: 18px;
+    }
+    .back{
+        color: grey;
+        font-size: 12px;
     }
 }
